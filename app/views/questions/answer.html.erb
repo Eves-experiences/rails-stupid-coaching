@@ -1,0 +1,28 @@
+<body>
+  <div class="container">
+    <h1> Stupid Coaching</h1>
+    <div class="col">
+      <figure class="bg-white p-3" style="border-left: .40rem solid #D3D3D3;">
+        <blockquote class="blockquote pb-2">
+          <p><%=@question %>
+          </p>
+        </blockquote>
+        <figcaption class="blockquote-footer mb-0 fs-5 whitespace-0">
+          <i>You</i>
+        </figcaption>
+      </figure>
+    </div>
+    <div class="col">
+      <figure class="bg p-3" style="border-left: .40rem solid #D3D3D3;">
+        <blockquote class="blockquote pb-2">
+          <p><strong><%= @answer %>
+          </strong></p>
+        </blockquote>
+        <figcaption class="blockquote-footer mb-0 fs-5">
+        <i>Your coach</i>
+        </figcaption>
+      </figure>
+    </div>
+    <a class="text-decoration-none" <%= link_to "Ask a new question", ask_path%>>
+  </div>
+</body>

@@ -1,0 +1,12 @@
+<body>
+<div class="container me-3">
+<h1> Stupid Coaching </h1>
+  <div class="col-4 align-items-center">
+    <label for="Form-text" class="form-label">Ask your coach anything:</label>
+    <form action="answer" data-turbo="false" class="input-group">
+      <input type="text" class="form-control" name="question" value="<%= params[:question] %>">
+      <input type="submit" value="Ask!" class="btn btn-primary">
+    </form>
+  </div>
+</div>
+</body>
